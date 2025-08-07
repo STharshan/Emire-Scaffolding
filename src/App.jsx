@@ -1,6 +1,7 @@
 import About from "./components/About"
 import CallToAction from "./components/CallToAction"
 import Footer from "./components/Footer"
+import Gallery from "./components/Gallery"
 import HeroSection from "./components/HeroSection"
 import Navbar from "./components/Navbar"
 import OurServices from "./components/OurServices"
@@ -18,6 +19,7 @@ function App() {
       <OurServices />
       <About />
       <RecentProjects />
+      <Gallery />
       <WhyChooseUs />
       <Testimonials />
       <TrustedBy />

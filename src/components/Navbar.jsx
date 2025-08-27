@@ -26,9 +26,12 @@ const Navbar = () => {
           <Phone className="w-4 h-4" />
           <span className="whitespace-nowrap font-semibold">01159 641 600</span>
         </div>
-        <button className="bg-blue-600 text-white px-4 py-2 rounded-md text-sm font-semibold hover:bg-blue-700 transition">
+        <a
+          href="mailto:Shay@empirescaffolding.co.uk"
+          className="bg-blue-600 text-white px-4 py-2 rounded-md text-sm font-semibold hover:bg-blue-700 transition"
+        >
           Get Quote
-        </button>
+        </a>
       </div>
     </header>
   );

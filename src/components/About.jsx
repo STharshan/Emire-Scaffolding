@@ -6,6 +6,7 @@ const serviceTypes = [
   'Professional erection',
   'Safe dismantling',
   'UK-wide quotations',
+  "Plattac System"
 ];
 
 const About = () => {
@@ -14,7 +15,7 @@ const About = () => {
       <div className="max-w-7xl mx-auto">
         {/* Badge */}
         <span className="inline-block text-sm bg-blue-100 text-blue-800 px-4 py-1 rounded-full font-semibold mb-4">
-          Established April 2000
+          Established 2000
         </span>
 
         {/* Heading and description */}
@@ -22,10 +23,10 @@ const About = () => {
           Over 24 Years of Excellence
         </h2>
         <p className="text-gray-700 mb-8 max-w-xl text-md">
-          Empire Scaffolding (GB) Ltd specialise in the supply, erection and dismantling of
-          scaffolding for both commercial and domestic projects. Centrally based in Hucknall,
-          Nottinghamshire, we are ideally positioned to deliver scaffolding services across the
-          Midlands.
+          Empire Scaffolding (GB) Ltd is a family-run company established in 2000, specialising in the supply, 
+          erection, and dismantling of scaffolding for both commercial and domestic projects. With over 60 directly 
+          employed CISRS-qualified staff, we combine experience with reliability. Based in Hucknall, Nottinghamshire,
+          we are ideally positioned to deliver scaffolding services across the Midlands.
         </p>
 
         {/* Grid layout */}

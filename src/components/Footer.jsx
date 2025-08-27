@@ -30,7 +30,7 @@ const Footer = () => {
             </li>
             <li className="flex items-start gap-2">
               <Mail className="w-4 h-4 mt-1 text-blue-500" />
-              info@empirescaffolding.co.uk
+              Shay@empirescaffolding.co.uk
             </li>
             <li className="flex items-start gap-2">
               <MapPin className="w-4 h-4 mt-1 text-blue-500" />
@@ -57,7 +57,7 @@ const Footer = () => {
 
       {/* Divider */}
       <div className="border-t border-gray-800 mt-10 pt-6 text-center text-gray-500">
-        © 2024 Empire Scaffolding (GB) Ltd. All rights reserved.
+        © 2025 Empire Scaffolding (GB) Ltd. All rights reserved.
       </div>
     </footer>
   );

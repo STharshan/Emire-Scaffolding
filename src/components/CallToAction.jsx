@@ -25,7 +25,7 @@ const CallToAction = () => {
 
           {/* Email Quote Button */}
           <a
-            href="mailto:info@example.com"
+            href="mailto:Shay@empirescaffolding.co.uk"
             className="flex items-center justify-center gap-2 border border-white px-5 py-3 rounded-md text-white hover:bg-white hover:text-blue-700 transition w-full"
           >
             <Mail size={18} />

@@ -42,8 +42,32 @@ const projects = [
     title: "Liverpool",
     location: "Birmingham",
     description:
-      "Comprehensive scaffolding installation for major Victorian courthouse renovation, ensuring complete building envelope coverage for restoration works.",
-    image: "/liverpool.jpg",
+      "A large student accommodation in the Liverpool city centre scaffolded in 8 weeks using the plettac scaffolding system for re-cladding for main contractor elhance.",
+    image: "/ablett.jpg",
+    tags: ["Victorian Architecture", "Full Coverage", "Legal Institution"],
+  },
+   {
+    title: "Liverpool",
+    location: "Birmingham",
+    description:
+      "A large student accommodation in the Liverpool city centre scaffolded in 8 weeks using the plettac scaffolding system for re-cladding for main contractor elhance.",
+    image: "/ablett.jpg",
+    tags: ["Victorian Architecture", "Full Coverage", "Legal Institution"],
+  },
+   {
+    title: "Nottingham Queens Medical Centre",
+    location: "Nottingham",
+    description:
+      "Plettac scaffold for window replacement",
+    image: "/queen.jpg",
+    tags: ["Victorian Architecture", "Full Coverage", "Legal Institution"],
+  },
+    {
+    title: "Temporary garage for Fire engine",
+    location: "Nottingham",
+    description:
+      "A short-term period, often during construction, renovation, or emergency situations where a permanent garage is unavailable.",
+    image: "/garage.jpg",
     tags: ["Victorian Architecture", "Full Coverage", "Legal Institution"],
   },
 ];
@@ -73,7 +97,7 @@ const RecentProjects = () => {
         >
           {projects.map((project, index) => (
             <SwiperSlide key={index}>
-              <div className="relative group bg-white rounded-xl shadow-md overflow-hidden text-left flex flex-col">
+              <div className="relative group bg-white rounded-xl mb-12 shadow-md overflow-hidden text-left flex flex-col">
                 <div className="relative overflow-hidden">
                   {/* Conditionally render video for the "Sir John Robinson House" project */}
                   {project.video ? (
@@ -119,12 +143,12 @@ const RecentProjects = () => {
           ))}
         </Swiper>
 
-        {/* CTA Button */}
+        {/* CTA Button
         <div className="mt-10">
           <button className="bg-blue-600 text-white px-6 py-3 rounded-md font-semibold text-sm hover:bg-blue-700 transition">
             View All Projects
           </button>
-        </div>
+        </div> */}
       </div>
     </section>
   );

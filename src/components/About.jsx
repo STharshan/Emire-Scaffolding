@@ -6,7 +6,9 @@ const serviceTypes = [
   'Professional erection',
   'Safe dismantling',
   'UK-wide quotations',
-  "Plattac System"
+  "Plattac System",
+  "Scaffold designs",
+  "Scaffold alarms"
 ];
 
 const About = () => {
@@ -20,13 +22,10 @@ const About = () => {
 
         {/* Heading and description */}
         <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-4">
-          Over 24 Years of Excellence
+          25 Years of Excellence
         </h2>
         <p className="text-gray-700 mb-8 max-w-xl text-md">
-          Empire Scaffolding (GB) Ltd is a family-run company established in 2000, specialising in the supply, 
-          erection, and dismantling of scaffolding for both commercial and domestic projects. With over 60 directly 
-          employed CISRS-qualified staff, we combine experience with reliability. Based in Hucknall, Nottinghamshire,
-          we are ideally positioned to deliver scaffolding services across the Midlands.
+          Empire Scaffolding (GB) Ltd is a family-run company established in 2000, specialising in the supply, erection, and dismantling of scaffolding for commercial, domestic, and industrial projects. With over 60 directly employed CISRS-qualified staff, we combine experience with reliability. Based in Hucknall, Nottinghamshire, we are ideally located in the Midlands, giving us easy access to deliver scaffolding services nationwide.
         </p>
 
         {/* Grid layout */}
@@ -74,12 +73,12 @@ const About = () => {
           {/* Highlight Card */}
           <div className="order-3 md:order-2 bg-gradient-to-r from-blue-600 to-blue-800 text-white rounded-xl p-6 text-center grid grid-cols-2 md:grid-cols-2 gap-4 items-center w-full lg:w-lg lg:-ml-30 lg:mx-auto">
             <div>
-              <p className="text-3xl font-bold">24+</p>
+              <p className="text-3xl font-bold">25+</p>
               <p className="text-sm">Years Experience</p>
             </div>
             <div>
-              <p className="text-3xl font-bold">5</p>
-              <p className="text-sm">Counties Covered</p>
+              <p className="text-3xl font-bold">60</p>
+              <p className="text-sm">CISRS-Trained</p>
             </div>
             <div>
               <p className="text-3xl font-bold">100%</p>

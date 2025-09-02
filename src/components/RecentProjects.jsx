@@ -23,8 +23,8 @@ const projects = [
     tags: ["Victorian Architecture", "Full Coverage", "Legal Institution"],
   },
   {
-    title: "Sir John Robinson House",
-    location: "Daybrook, Arnold",
+    title: "Sherwood Observatory",
+    location: "Sutton-in-Ashfield",
     description:
       "Multi-level scaffolding system for modern institutional building maintenance, providing safe working platforms across multiple floors and sections.",
     video: "/castle.mp4", // Video URL for this project
@@ -39,22 +39,14 @@ const projects = [
     tags: ["Historic Building", "Complex Access", "Civic Project"],
   },
   {
-    title: "Liverpool",
-    location: "Birmingham",
+    title: "Ablett House",
+    location: "Liverpool",
     description:
-      "A large student accommodation in the Liverpool city centre scaffolded in 8 weeks using the plettac scaffolding system for re-cladding for main contractor elhance.",
+      "Modern student accommodation development designed to provide safe and stylish living in the heart of Liverpool.",
     image: "/ablett.jpg",
-    tags: ["Victorian Architecture", "Full Coverage", "Legal Institution"],
+    tags: ["Modern student accommodation", "City-centre location", "High-rise structure"],
   },
-   {
-    title: "Liverpool",
-    location: "Birmingham",
-    description:
-      "A large student accommodation in the Liverpool city centre scaffolded in 8 weeks using the plettac scaffolding system for re-cladding for main contractor elhance.",
-    image: "/ablett.jpg",
-    tags: ["Victorian Architecture", "Full Coverage", "Legal Institution"],
-  },
-   {
+  {
     title: "Nottingham Queens Medical Centre",
     location: "Nottingham",
     description:
@@ -62,7 +54,7 @@ const projects = [
     image: "/queen.jpg",
     tags: ["Victorian Architecture", "Full Coverage", "Legal Institution"],
   },
-    {
+  {
     title: "Temporary garage for Fire engine",
     location: "Nottingham",
     description:
@@ -97,7 +89,7 @@ const RecentProjects = () => {
         >
           {projects.map((project, index) => (
             <SwiperSlide key={index}>
-              <div className="relative group bg-white rounded-xl mb-12 shadow-md overflow-hidden text-left flex flex-col">
+              <div className="relative group h-120 bg-white rounded-xl mb-12 shadow-md overflow-hidden text-left flex flex-col">
                 <div className="relative overflow-hidden">
                   {/* Conditionally render video for the "Sir John Robinson House" project */}
                   {project.video ? (

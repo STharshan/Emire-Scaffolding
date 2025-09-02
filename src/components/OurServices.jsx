@@ -89,12 +89,12 @@ const services = [
     description: "Standard scaffolding for various construction needs.",
     icon: <FaBuilding className="text-4xl" />, // Replaced with an actual icon
   },
-  {
-    id: 2,
-    title: "Specialised Refurbishment Work",
-    description: "Projects requiring monoflexing to council specifications or working near train lines.",
-    icon: <FaCogs className="text-4xl" />, // Replaced with an actual icon
-  },
+  // {
+  //   id: 2,
+  //   title: "Specialised Refurbishment Work",
+  //   description: "Projects requiring monoflexing to council specifications or working near train lines.",
+  //   icon: <FaCogs className="text-4xl" />, // Replaced with an actual icon
+  // },
   {
     id: 3,
     title: "Full Supply, Erection, and Dismantling of Scaffolding",
@@ -124,13 +124,12 @@ const OurServices = () => {
           {services.map((service) => (
             <div
               key={service.id}
-              className="flex flex-col items-center p-6 border rounded-lg shadow-md hover:shadow-lg transition-all duration-300 relative bg-white"
-            >
-              <div className="bg-blue-100 p-4 rounded-full mb-4">
+              className="flex flex-col items-center p-6 border rounded-lg text-white shadow-md hover:shadow-lg transition-all duration-300 relative bg-blue-500">   
+              <div className="bg-blue-800 p-4 rounded-full mb-4">
                 {service.icon}
               </div>
-              <h3 className="text-xl font-semibold mb-2 text-gray-800">{service.title}</h3>
-              <p className="text-sm sm:text-base text-gray-600">{service.description}</p>
+              <h3 className="text-xl font-semibold mb-2">{service.title}</h3>
+              <p className="text-sm sm:text-base">{service.description}</p>
             </div>
           ))}
         </div>

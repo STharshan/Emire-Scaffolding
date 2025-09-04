@@ -7,6 +7,7 @@ import Gallery from "./components/Gallery"
 import HeroSection from "./components/HeroSection"
 import Navbar from "./components/Navbar"
 import OurServices from "./components/OurServices"
+import PRSection from "./components/PRSection"
 import RecentProjects from "./components/RecentProjects"
 import Testimonials from "./components/Testimonials"
 import TrustedBy from "./components/TrustedBy"
@@ -21,6 +22,7 @@ function App() {
       <OurServices />
       <About />
       <RecentProjects />
+      <PRSection />
       <Gallery />
       <WhyChooseUs />
       <Testimonials />

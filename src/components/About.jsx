@@ -6,7 +6,7 @@ const serviceTypes = [
   'Professional erection',
   'Safe dismantling',
   'UK-wide quotations',
-  "Plattac System",
+  "plettac System",
   "Scaffold designs",
   "Scaffold alarms"
 ];

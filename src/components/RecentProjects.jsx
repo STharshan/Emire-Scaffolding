@@ -66,7 +66,7 @@ const projects = [
 
 const RecentProjects = () => {
   return (
-    <section className="px-4 py-16 sm:px-6 lg:px-16 bg-white">
+    <section className="px-4 py-10 sm:px-6 lg:px-16 bg-white">
       <div className="max-w-7xl mx-auto text-center">
         <h2 className="text-2xl sm:text-3xl font-bold mb-2">Recent Projects</h2>
         <p className="text-gray-600 mb-10 text-md sm:text-lg max-w-xl mx-auto">

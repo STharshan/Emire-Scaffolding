@@ -109,7 +109,7 @@ const services = [
   },
   {
     id: 5,
-    title: "Plattac System Scaffolding",
+    title: "plettac System Scaffolding",
     description: "Modular system scaffolding, suitable for complex or high-rise projects.",
     icon: <FaBuilding className="text-4xl" />, // Replaced with an actual icon
   },

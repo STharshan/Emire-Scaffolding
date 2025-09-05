@@ -86,7 +86,7 @@ const VideoCard = ({ service }) => {
                                 onClick={handlePlay}
                                 className="absolute inset-0 flex items-center justify-center bg-black/40 hover:bg-black/60 transition"
                             >
-                                <Play className="w-12 h-12 text-white bg-green-800 rounded-full p-4" />
+                                <Play className="w-12 h-12 text-white bg-blue-800 rounded-full p-4" />
                             </button>
                         )}
                         {/* Pause Button (only visible when hovering & playing) */}
@@ -95,7 +95,7 @@ const VideoCard = ({ service }) => {
                                 onClick={handlePause}
                                 className="absolute inset-0 flex items-center justify-center bg-black/30 hover:bg-black/50 transition"
                             >
-                                <Pause className="w-12 h-12 text-white bg-green-800 rounded-full p-4" />
+                                <Pause className="w-12 h-12 text-white bg-blue-800 rounded-full p-4" />
                             </button>
                         )}
                     </>
@@ -114,7 +114,7 @@ const VideoCard = ({ service }) => {
                     {/* <p className="text-sm text-gray-800">{service.subtitle}</p> */}
                 </div>
             </div>
-            <p className="text-lg text-gray-800">{service.subtitle}</p>
+            <p className="text-lg text-gray-800 text-left">{service.subtitle}</p>
             <div className="flex gap-10 mt-5">
                 <p className="text-gray-800">Duration: {service.duration}</p>
                 <p className="text-gray-800">{service.sub}</p>

@@ -1,33 +1,98 @@
-import { Phone } from 'lucide-react';
+import { useState } from "react";
+import { Phone, Menu, X } from "lucide-react";
 
 const Navbar = () => {
+  const [isOpen, setIsOpen] = useState(false);
+
+  const navLinks = [
+    { label: "About", href: "#about" },
+    { label: "Services", href: "#our-services" },
+    { label: "Recent Projects", href: "#recent-projects" },
+    { label: "Gallery", href: "#gallery" },
+    { label: "Testimonials", href: "#testimonials" },
+    { label: "Contact", href: "#contact" },
+  ];
+
   return (
-    <header className="w-full flex bg-black items-center justify-between py-2 px-4 sm:px-10 border-b">
-      {/* Left - Logo */}
-      <div className="flex items-center gap-4">
-        {/* Logo Image */}
-        <div className="w-50 h-16">
-          <img
-            src="/Logo.png" // Replace with your logo path
-            alt="Empire Scaffolding Logo"
-            className="w-full h-full object-contain"
-          />
+    <header className="w-full bg-black border-b fixed top-0 left-0 z-50">
+      <div className="flex items-center justify-between py-3 px-4 sm:px-10">
+        {/* Left - Logo */}
+        <div className="flex items-center gap-4">
+          <div className="w-40 h-14">
+            <img
+              src="/Logo.png"
+              alt="Empire Scaffolding Logo"
+              className="w-full h-full object-contain"
+            />
+          </div>
         </div>
+
+        {/* Desktop Nav */}
+        <nav className="hidden md:flex items-center gap-8 text-white font-medium text-lg">
+          {navLinks.map((link) => (
+            <a
+              key={link.href}
+              href={link.href}
+              className="hover:text-blue-400 transition"
+            >
+              {link.label}
+            </a>
+          ))}
+        </nav>
+
+        {/* Right - Phone + Quote button (desktop only) */}
+        <div className="hidden md:flex items-center gap-6">
+          <div className="flex items-center gap-2 text-white">
+            <Phone className="w-4 h-4" />
+            <span className="whitespace-nowrap font-semibold">
+              01159 641 600
+            </span>
+          </div>
+          <a
+            href="mailto:Shay@empirescaffolding.co.uk"
+            className="bg-blue-600 text-white px-4 py-2 rounded-md font-semibold hover:bg-blue-700 transition"
+          >
+            Get Quote
+          </a>
+        </div>
+
+        {/* Mobile Menu Button */}
+        <button
+          className="md:hidden text-white"
+          onClick={() => setIsOpen(!isOpen)}
+        >
+          {isOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
+        </button>
       </div>
 
-      {/* Right - Phone and Button (hidden below md = 768px) */}
-      <div className="hidden md:flex items-center gap-6">
-        <div className="flex items-center gap-2 text-sm text-white">
-          <Phone className="w-4 h-4" />
-          <span className="whitespace-nowrap font-semibold">01159 641 600</span>
+      {/* Mobile Nav Menu */}
+      {isOpen && (
+        <div className="md:hidden bg-black text-white flex flex-col items-center gap-4 py-6 text-lg">
+          {navLinks.map((link) => (
+            <a
+              key={link.href}
+              href={link.href}
+              className="hover:text-blue-400 transition"
+              onClick={() => setIsOpen(false)}
+            >
+              {link.label}
+            </a>
+          ))}
+
+          <div className="flex items-center gap-2 text-white">
+            <Phone className="w-4 h-4" />
+            <span className="whitespace-nowrap font-semibold">
+              01159 641 600
+            </span>
+          </div>
+          <a
+            href="mailto:Shay@empirescaffolding.co.uk"
+            className="bg-blue-600 text-white px-4 py-2 rounded-md font-semibold hover:bg-blue-700 transition"
+          >
+            Get Quote
+          </a>
         </div>
-        <a
-          href="mailto:Shay@empirescaffolding.co.uk"
-          className="bg-blue-600 text-white px-4 py-2 rounded-md text-sm font-semibold hover:bg-blue-700 transition"
-        >
-          Get Quote
-        </a>
-      </div>
+      )}
     </header>
   );
 };

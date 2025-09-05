@@ -2,6 +2,7 @@ import About from "./components/About"
 import CallToAction from "./components/CallToAction"
 import CertificationCategories from "./components/CertificationCategories"
 import CertificationsSection from "./components/CertificationsSection"
+import Details from "./components/Details"
 import Footer from "./components/Footer"
 import Gallery from "./components/Gallery"
 import HeroSection from "./components/HeroSection"
@@ -24,6 +25,7 @@ function App() {
       <RecentProjects />
       <PRSection />
       <Gallery />
+      <Details />
       <WhyChooseUs />
       <Testimonials />
       <CertificationCategories />

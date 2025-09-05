@@ -62,11 +62,19 @@ const projects = [
     image: "/garage.jpg",
     tags: ["Victorian Architecture", "Full Coverage", "Legal Institution"],
   },
+  {
+    title: "Mansfield Road",
+    location: "Nottingham",
+    description:
+      "Traditional tube and fit scaffolding for full renovation works",
+    image: "/Mansfield.webp",
+    tags: ["Full Building Access" , "Safety & Compliance", "Custom Builds"],
+  },
 ];
 
 const RecentProjects = () => {
   return (
-    <section className="px-4 py-10 sm:px-6 lg:px-16 bg-white">
+    <section className="px-4 py-10 sm:px-6 lg:px-16 bg-white scroll-m-18" id="recent-projects">
       <div className="max-w-7xl mx-auto text-center">
         <h2 className="text-2xl sm:text-3xl font-bold mb-2">Recent Projects</h2>
         <p className="text-gray-600 mb-10 text-md sm:text-lg max-w-xl mx-auto">

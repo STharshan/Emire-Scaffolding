@@ -13,7 +13,7 @@ const serviceTypes = [
 
 const About = () => {
   return (
-    <section className="w-full bg-white px-4 py-16 sm:px-6 lg:px-16">
+    <section className="w-full bg-white px-4 py-16 sm:px-6 lg:px-16 scroll-m-15" id='about'>
       <div className="max-w-7xl mx-auto">
         {/* Badge */}
         <span className="inline-block text-sm bg-blue-100 text-blue-800 px-4 py-1 rounded-full font-semibold mb-4">

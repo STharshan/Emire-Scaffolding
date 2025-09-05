@@ -2,7 +2,7 @@ import { Phone, Mail } from "lucide-react";
 
 const CallToAction = () => {
   return (
-    <section className="bg-gradient-to-r from-blue-800 to-gray-900 text-white py-16 px-4 sm:px-6 lg:px-16">
+    <section id="contact" className="bg-gradient-to-r from-blue-800 to-gray-900 text-white py-16 px-4 sm:px-6 lg:px-16">
       <div className="max-w-3xl mx-auto text-center">
         <h2 className="text-3xl sm:text-3xl font-bold mb-4 max-w-sm sm:max-w-xl mx-auto">
           Ready to Start Your Project?

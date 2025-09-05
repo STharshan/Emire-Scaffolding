@@ -19,7 +19,7 @@ const testimonials = [
 
 const Testimonials = () => {
   return (
-    <section className="bg-gray-100 py-16 px-4 sm:px-6 lg:px-16">
+    <section className="bg-gray-100 py-16 px-4 sm:px-6 lg:px-16 scroll-m-18" id="testimonials">
       <div className="max-w-7xl mx-auto text-center">
         {/* Header */}
         <h2 className="text-2xl sm:text-3xl font-bold mb-2">

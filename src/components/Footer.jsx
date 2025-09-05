@@ -7,10 +7,11 @@ const Footer = () => {
         {/* Company Info */}
         <div>
           <div className="flex items-center gap-3 mb-4">
-            <div className="bg-blue-600 p-2 rounded-lg">
-              <Building className="w-5 h-5 text-white" />
-            </div>
-            <h4 className="font-semibold">Empire Scaffolding (GB) Ltd</h4>
+            <img
+              src="/Logo.png"         // replace with your image path
+              alt="Empire Scaffolding Logo"
+              className="w-40 h-14 object-contain"
+            />
           </div>
           <p className="text-sm text-gray-300">
             Established in April 2000, Empire Scaffolding (GB) Ltd specialise in professional

@@ -28,7 +28,7 @@ const services = [
   },
   {
     id: 5,
-    title: "plettac System Scaffolding",
+    title: "Plettac System Scaffolding",
     description: "Modular system scaffolding, suitable for complex or high-rise projects.",
     icon: <FaBuilding className="text-4xl" />, // Replaced with an actual icon
   },
@@ -37,9 +37,9 @@ const services = [
 const OurServices = () => {
   return (
     <section className="py-12 px-6 bg-gray-50 scroll-m-15" id="our-services">
-      <div className="container mx-auto text-center max-w-6xl">
+      <div className="container mx-auto text-center max-w-7xl">
         <h2 className="text-3xl font-semibold mb-8">Our Services</h2>
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
           {services.map((service) => (
             <div
               key={service.id}

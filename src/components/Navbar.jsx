@@ -5,18 +5,34 @@ const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   const navLinks = [
-    { label: "About", href: "#about" },
-    { label: "Services", href: "#our-services" },
-    { label: "Recent Projects", href: "#recent-projects" },
-    { label: "Gallery", href: "#gallery" },
-    { label: "Testimonials", href: "#testimonials" },
-    { label: "Contact", href: "#contact" },
+    { label: "About", href: "about" },
+    { label: "Services", href: "our-services" },
+    { label: "Recent Projects", href: "recent-projects" },
+    { label: "Gallery", href: "gallery" },
+    { label: "Testimonials", href: "testimonials" },
+    { label: "Contact", href: "contact" },
   ];
+
+  const handleScroll = (id) => {
+    const element = document.getElementById(id);
+    if (element) {
+      const headerOffset = 80; // height of your fixed navbar
+      const elementPosition = element.getBoundingClientRect().top;
+      const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
+
+      window.scrollTo({
+        top: offsetPosition,
+        behavior: "smooth",
+      });
+
+      setIsOpen(false); // close mobile menu
+    }
+  };
 
   return (
     <header className="w-full bg-black border-b fixed top-0 left-0 z-50">
       <div className="flex items-center justify-between py-3 px-4 sm:px-10">
-        {/* Left - Logo */}
+        {/* Logo */}
         <div className="flex items-center gap-4">
           <div className="w-40 h-14">
             <img
@@ -30,17 +46,17 @@ const Navbar = () => {
         {/* Desktop Nav */}
         <nav className="hidden md:flex items-center gap-8 text-white font-medium text-lg">
           {navLinks.map((link) => (
-            <a
+            <button
               key={link.href}
-              href={link.href}
+              onClick={() => handleScroll(link.href)}
               className="hover:text-blue-400 transition"
             >
               {link.label}
-            </a>
+            </button>
           ))}
         </nav>
 
-        {/* Right - Phone + Quote button (desktop only) */}
+        {/* Right - Phone + Quote button */}
         <div className="hidden md:flex items-center gap-6">
           <div className="flex items-center gap-2 text-white">
             <Phone className="w-4 h-4" />
@@ -69,14 +85,13 @@ const Navbar = () => {
       {isOpen && (
         <div className="md:hidden bg-black text-white flex flex-col items-center gap-4 py-6 text-lg">
           {navLinks.map((link) => (
-            <a
+            <button
               key={link.href}
-              href={link.href}
+              onClick={() => handleScroll(link.href)}
               className="hover:text-blue-400 transition"
-              onClick={() => setIsOpen(false)}
             >
               {link.label}
-            </a>
+            </button>
           ))}
 
           <div className="flex items-center gap-2 text-white">

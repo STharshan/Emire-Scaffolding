@@ -1,6 +1,5 @@
 import { CheckCircle } from 'lucide-react';
 
-const serviceAreas = ['Nottingham', 'Derby', 'Leicester', 'Lincolnshire', 'Birmingham'];
 const serviceTypes = [
   'Supply of scaffolding',
   'Professional erection',
@@ -33,7 +32,7 @@ const About = () => {
           {/* Service Lists */}
           <div className="order-1 md:order-1 md:col-span-2 grid grid-cols-1 sm:grid-cols-2 gap-6">
             {/* Service Areas */}
-            <div>
+            {/* <div>
               <h4 className="font-semibold mb-3">Service Areas</h4>
               <ul className="space-y-2 text-sm">
                 {serviceAreas.map((area, idx) => (
@@ -43,7 +42,7 @@ const About = () => {
                   </li>
                 ))}
               </ul>
-            </div>
+            </div> */}
 
             {/* Our Services */}
             <div>

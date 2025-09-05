@@ -10,9 +10,7 @@ const Footer = () => {
             <div className="bg-blue-600 p-2 rounded-lg">
               <Building className="w-5 h-5 text-white" />
             </div>
-            <h4 className="font-semibold">
-              Empire Scaffolding (GB) Ltd
-            </h4>
+            <h4 className="font-semibold">Empire Scaffolding (GB) Ltd</h4>
           </div>
           <p className="text-sm text-gray-300">
             Established in April 2000, Empire Scaffolding (GB) Ltd specialise in professional
@@ -26,19 +24,37 @@ const Footer = () => {
           <ul className="space-y-3 text-sm text-gray-300">
             <li className="flex items-start gap-2">
               <Phone className="w-4 h-4 mt-1 text-blue-500" />
-              01159 641 600
+              <a
+                href="https://wa.me/441159641600"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="hover:text-yellow-500 transition"
+              >
+                01159 641 600
+              </a>
             </li>
             <li className="flex items-start gap-2">
               <Mail className="w-4 h-4 mt-1 text-blue-500" />
-              Shay@empirescaffolding.co.uk
+              <a
+                href="mailto:Shay@empirescaffolding.co.uk"
+                className="hover:text-blue-400 transition"
+                target="_blank"
+              >
+                info@empirescaffolding.co.uk
+              </a>
             </li>
             <li className="flex items-start gap-2">
               <MapPin className="w-4 h-4 mt-1 text-blue-500" />
-              <span>
+              <a
+                href="https://www.google.com/maps/search/?api=1&query=Bakerbrook+Industrial+Estate,+Wigwam+Lane,+Hucknall,+Nottingham+NG15+7SZ"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="hover:text-blue-400 transition"
+              >
                 Bakerbrook Industrial Estate <br />
                 Wigwam Lane, Hucknall <br />
                 Nottingham NG15 7SZ
-              </span>
+              </a>
             </li>
           </ul>
         </div>
@@ -51,6 +67,7 @@ const Footer = () => {
             <li>Domestic Scaffolding</li>
             <li>Emergency Services</li>
             <li>Safety Inspections</li>
+            <li>Industrial Scaffolding</li>
           </ul>
         </div>
       </div>
@@ -58,6 +75,19 @@ const Footer = () => {
       {/* Divider */}
       <div className="border-t border-gray-800 mt-10 pt-6 text-center text-gray-500">
         © 2025 Empire Scaffolding (GB) Ltd. All rights reserved.
+      </div>
+      <div className="mt-2 text-center font-semibold">
+        <p>
+          Powered by{" "}
+          <a
+            href="https://www.ansely.co.uk/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-blue-700 hover:underline"
+          >
+            Ansely
+          </a>
+        </p>
       </div>
     </footer>
   );

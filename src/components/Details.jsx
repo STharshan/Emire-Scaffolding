@@ -4,7 +4,7 @@ import { Building, Home, CheckCircle, Play, Pause } from "lucide-react";
 const services = [
     {
         title: "Nottingham City Council",
-        subtitle: "From skyline visions to street-level precision — watch our team bring structure to the city with scaffolding solutions built for impact.",
+        subtitle: "From skyline visions to street-level precision - watch our team bring structure to the city with scaffolding solutions built for impact.",
         icon: <Building className="w-7 h-8" />,
         video: "/VIDEO.mp4",
         color: "bg-blue-800 text-white",

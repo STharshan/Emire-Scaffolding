@@ -5,7 +5,7 @@ const services = [
     {
         title: "Nottingham City Council",
         subtitle: "From skyline visions to street-level precision - watch our team bring structure to the city with scaffolding solutions built for impact.",
-        icon: <Building className="w-7 h-8" />,
+        icon: <Building className="w-7 h-7" />,
         video: "/VIDEO.mp4",
         color: "bg-blue-800 text-white",
         sub: "40-Stroy Project",
@@ -16,7 +16,7 @@ const services = [
         subtitle: "Watch our team construct a new build at Sherwood Observatory using traditional tube and fit scaffolding, delivering precision and safety for this landmark project.",
         icon: <Home className="w-7 h-7" />,
         video: "/VIDEO1.mp4",
-        color: "bg-slate-800 text-white",
+        color: "bg-blue-800 text-white",
         sub: "New Build Project",
         duration: "1:12"
     },
@@ -115,7 +115,7 @@ const VideoCard = ({ service }) => {
                 </div>
             </div>
             <p className="text-lg text-gray-800 text-left">{service.subtitle}</p>
-            <div className="flex gap-10 mt-5">
+            <div className="flex justify-between mt-5 w-full">
                 <p className="text-gray-800">Duration: {service.duration}</p>
                 <p className="text-gray-800">{service.sub}</p>
             </div>

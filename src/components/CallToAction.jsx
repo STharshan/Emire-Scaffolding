@@ -1,6 +1,12 @@
 import { Phone, Mail } from "lucide-react";
 
 const CallToAction = () => {
+  // Function to handle the call action
+  const handleCall = () => {
+    console.log("Calling 01159 641 600");
+    // You can add more actions here, like tracking analytics or showing a modal
+  };
+
   return (
     <section id="contact" className="bg-gradient-to-r from-blue-800 to-gray-900 text-white py-16 px-4 sm:px-6 lg:px-16">
       <div className="max-w-3xl mx-auto text-center">
@@ -17,6 +23,7 @@ const CallToAction = () => {
           {/* Call Now Button */}
           <a
             href="tel:01159641600"
+            onClick={handleCall}  // Trigger handleCall when clicked
             className="flex items-center justify-center gap-2 bg-white text-black font-medium px-5 py-3 rounded-md shadow hover:bg-gray-300 transition w-full"
           >
             <Phone size={18} />

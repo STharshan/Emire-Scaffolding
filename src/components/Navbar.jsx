@@ -29,6 +29,12 @@ const Navbar = () => {
     }
   };
 
+  // Handle phone call
+  const handleCall = () => {
+    console.log("Calling 01159 641 600");
+    // You can add additional actions here, such as tracking or analytics
+  };
+
   return (
     <header className="w-full bg-black border-b fixed top-0 left-0 z-50">
       <div className="flex items-center justify-between py-3 px-4 sm:px-10">
@@ -60,7 +66,11 @@ const Navbar = () => {
         <div className="hidden md:flex items-center gap-6">
           <div className="flex items-center gap-2 text-white">
             <Phone className="w-4 h-4" />
-            <a href="tel:01159641600" className="whitespace-nowrap font-semibold">
+            <a
+              href="tel:01159641600"
+              onClick={handleCall}  // Trigger handleCall when clicked
+              className="whitespace-nowrap font-semibold"
+            >
               01159 641 600
             </a>
           </div>
@@ -96,9 +106,13 @@ const Navbar = () => {
 
           <div className="flex items-center gap-2 text-white">
             <Phone className="w-4 h-4" />
-            <span className="whitespace-nowrap font-semibold">
+            <a
+              href="tel:01159641600"
+              onClick={handleCall}  // Trigger handleCall when clicked
+              className="whitespace-nowrap font-semibold"
+            >
               01159 641 600
-            </span>
+            </a>
           </div>
           <a
             href="mailto:Shay@empirescaffolding.co.uk"

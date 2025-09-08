@@ -26,10 +26,8 @@ const Footer = () => {
             <li className="flex items-start gap-2">
               <Phone className="w-4 h-4 mt-1 text-blue-600" />
               <a
-                href="tell:01159641600"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="hover:text-yellow-500 transition"
+                href="tel:+01159641600"  // corrected href from "tell" to "tel"
+                className="hover:text-blue-600 transition"
               >
                 01159 641 600
               </a>
@@ -38,8 +36,9 @@ const Footer = () => {
               <Mail className="w-4 h-4 mt-1 text-blue-600" />
               <a
                 href="mailto:Shay@empirescaffolding.co.uk"
-                className="hover:text-blue-400 transition"
+                className="hover:text-blue-600 transition"
                 target="_blank"
+                rel="noopener noreferrer"
               >
                 info@empirescaffolding.co.uk
               </a>
@@ -50,7 +49,7 @@ const Footer = () => {
                 href="https://www.google.com/maps/search/?api=1&query=Bakerbrook+Industrial+Estate,+Wigwam+Lane,+Hucknall,+Nottingham+NG15+7SZ"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="hover:text-blue-400 transition"
+                className="hover:text-blue-600 transition"
               >
                 Bakerbrook Industrial Estate <br />
                 Wigwam Lane, Hucknall <br />

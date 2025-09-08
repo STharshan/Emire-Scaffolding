@@ -60,7 +60,7 @@ const Navbar = () => {
         <div className="hidden md:flex items-center gap-6">
           <div className="flex items-center gap-2 text-white">
             <Phone className="w-4 h-4" />
-            <a href="tel:+441159641600" className="whitespace-nowrap font-semibold">
+            <a href="tel:01159641600" className="whitespace-nowrap font-semibold">
               01159 641 600
             </a>
           </div>

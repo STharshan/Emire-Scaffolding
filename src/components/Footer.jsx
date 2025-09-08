@@ -26,7 +26,7 @@ const Footer = () => {
             <li className="flex items-start gap-2">
               <Phone className="w-4 h-4 mt-1 text-blue-600" />
               <a
-                href="tell:+441159641600"
+                href="tell:01159641600"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="hover:text-yellow-500 transition"

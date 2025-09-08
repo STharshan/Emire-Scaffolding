@@ -16,7 +16,7 @@ const CallToAction = () => {
         <div className="flex flex-col sm:flex-row gap-4 w-full">
           {/* Call Now Button */}
           <a
-            href="tel:+441159641600"
+            href="tel:01159641600"
             className="flex items-center justify-center gap-2 bg-white text-black font-medium px-5 py-3 rounded-md shadow hover:bg-gray-300 transition w-full"
           >
             <Phone size={18} />

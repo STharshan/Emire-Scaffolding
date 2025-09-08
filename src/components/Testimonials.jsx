@@ -5,14 +5,14 @@ const testimonials = [
     name: "Martin Wragg",
     role: "Verified Customer",
     initial: "M",
-    bgColor: "bg-blue-800",
+    bgColor: "bg-blue-600",
     text: `They were the most polite people I've ever had working with me. People need to treat people as they would like to be treated themselves before leaving a bad review.`,
   },
   {
     name: "Ghost Hunter",
     role: "Domestic Customer",
     initial: "G",
-    bgColor: "bg-gray-900",
+    bgColor: "bg-blue-600",
     text: `They did a great job scaffolding the front of our house. It was perfect for what we needed to do, they are very professional and are great value for money.`,
   },
 ];

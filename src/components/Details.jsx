@@ -7,7 +7,7 @@ const services = [
         subtitle: "From skyline visions to street-level precision - watch our team bring structure to the city with scaffolding solutions built for impact.",
         icon: <Building className="w-7 h-7" />,
         video: "/VIDEO.mp4",
-        color: "bg-blue-800 text-white",
+        color: "bg-blue-600 text-white",
         sub: "40-Stroy Project",
         duration: "0:57"
     },
@@ -16,7 +16,7 @@ const services = [
         subtitle: "Watch our team construct a new build at Sherwood Observatory using traditional tube and fit scaffolding, delivering precision and safety for this landmark project.",
         icon: <Home className="w-7 h-7" />,
         video: "/VIDEO1.mp4",
-        color: "bg-blue-800 text-white",
+        color: "bg-blue-600 text-white",
         sub: "New Build Project",
         duration: "1:12"
     },
@@ -86,7 +86,7 @@ const VideoCard = ({ service }) => {
                                 onClick={handlePlay}
                                 className="absolute inset-0 flex items-center justify-center bg-black/40 hover:bg-black/60 transition"
                             >
-                                <Play className="w-12 h-12 text-white bg-blue-800 rounded-full p-4" />
+                                <Play className="w-12 h-12 text-white bg-blue-600 rounded-full p-4" />
                             </button>
                         )}
                         {/* Pause Button (only visible when hovering & playing) */}
@@ -95,7 +95,7 @@ const VideoCard = ({ service }) => {
                                 onClick={handlePause}
                                 className="absolute inset-0 flex items-center justify-center bg-black/30 hover:bg-black/50 transition"
                             >
-                                <Pause className="w-12 h-12 text-white bg-blue-800 rounded-full p-4" />
+                                <Pause className="w-12 h-12 text-white bg-blue-600 rounded-full p-4" />
                             </button>
                         )}
                     </>

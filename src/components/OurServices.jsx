@@ -43,7 +43,7 @@ const OurServices = () => {
           {services.map((service) => (
             <div
               key={service.id}
-              className="flex flex-col items-center p-6 border rounded-lg text-white shadow-md hover:shadow-lg transition-all duration-300 relative bg-blue-500">   
+              className="flex flex-col items-center p-6 border rounded-lg text-white shadow-md hover:shadow-lg transition-all duration-300 relative bg-blue-600">   
               <div className="bg-blue-800 p-4 rounded-full mb-4">
                 {service.icon}
               </div>

@@ -15,7 +15,7 @@ const About = () => {
     <section className="w-full bg-white px-4 py-16 sm:px-6 lg:px-16 scroll-m-15" id='about'>
       <div className="max-w-7xl mx-auto">
         {/* Badge */}
-        <span className="inline-block text-sm bg-blue-100 text-blue-800 px-4 py-1 rounded-full font-semibold mb-4">
+        <span className="inline-block text-sm bg-blue-100 text-blue-600 px-4 py-1 rounded-full font-semibold mb-4">
           Established 2000
         </span>
 

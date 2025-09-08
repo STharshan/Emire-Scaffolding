@@ -3,7 +3,7 @@ import { Shield, Clock, Users, Award } from "lucide-react";
 const features = [
   {
     icon: <Shield className="w-8 h-8 text-white" />,
-    bg: "bg-blue-800",
+    bg: "bg-blue-600",
     title: "Safety First",
     description: "Fully insured with comprehensive safety protocols and certified equipment",
   },
@@ -15,7 +15,7 @@ const features = [
   },
   {
     icon: <Users className="w-8 h-8 text-white" />,
-    bg: "bg-blue-800",
+    bg: "bg-blue-600",
     title: "Expert Team",
     description: "Qualified professionals with years of scaffolding experience",
   },

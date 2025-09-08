@@ -24,9 +24,9 @@ const Footer = () => {
           <h4 className="font-semibold mb-4">Contact Info</h4>
           <ul className="space-y-3 text-sm text-gray-300">
             <li className="flex items-start gap-2">
-              <Phone className="w-4 h-4 mt-1 text-blue-500" />
+              <Phone className="w-4 h-4 mt-1 text-blue-600" />
               <a
-                href="https://wa.me/441159641600"
+                href="tell:+441159641600"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="hover:text-yellow-500 transition"
@@ -35,7 +35,7 @@ const Footer = () => {
               </a>
             </li>
             <li className="flex items-start gap-2">
-              <Mail className="w-4 h-4 mt-1 text-blue-500" />
+              <Mail className="w-4 h-4 mt-1 text-blue-600" />
               <a
                 href="mailto:Shay@empirescaffolding.co.uk"
                 className="hover:text-blue-400 transition"
@@ -45,7 +45,7 @@ const Footer = () => {
               </a>
             </li>
             <li className="flex items-start gap-2">
-              <MapPin className="w-4 h-4 mt-1 text-blue-500" />
+              <MapPin className="w-4 h-4 mt-1 text-blue-600" />
               <a
                 href="https://www.google.com/maps/search/?api=1&query=Bakerbrook+Industrial+Estate,+Wigwam+Lane,+Hucknall,+Nottingham+NG15+7SZ"
                 target="_blank"
@@ -84,7 +84,7 @@ const Footer = () => {
             href="https://www.ansely.co.uk/"
             target="_blank"
             rel="noopener noreferrer"
-            className="text-blue-700 hover:underline"
+            className="text-blue-600 hover:underline"
           >
             Ansely
           </a>

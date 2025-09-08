@@ -30,7 +30,7 @@ const PRSection = () => {
         {cards.map((card, index) => (
           <div
             key={index}
-            className="bg-white p-6 rounded-xl mb-10 shadow-lg border border-blue-500 hover:shadow-md transition duration-300"
+            className="bg-white p-6 rounded-xl mb-10 shadow-lg border border-blue-600 hover:shadow-md transition duration-300"
           >
             <div className="flex items-start space-x-3 mb-4">
               {card.icon}
@@ -44,7 +44,7 @@ const PRSection = () => {
                 href={card.link} // Updated link for each card
                 target="_blank" // Open in a new tab
                 rel="noopener noreferrer" // Prevent security risks when opening external links
-                className="inline-flex items-center justify-center gap-2 bg-blue-500 text-white px-30 py-2 rounded-lg text-sm font-medium hover:bg-gray-800 transition"
+                className="inline-flex items-center justify-center gap-2 bg-blue-600 text-white px-30 py-2 rounded-lg text-sm font-medium hover:bg-gray-800 transition"
               >
                 Read More
                 <FaExternalLinkAlt className="ml-2 w-4 h-4" />

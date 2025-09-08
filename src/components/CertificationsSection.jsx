@@ -5,17 +5,17 @@ const certifications = [
     {
         title: 'Quality Assurance',
         description: 'Our certifications guarantee that we meet and exceed industry standards for quality and safety.',
-        icon: <FaShieldAlt className="h-8 w-8 text-blue-500" />
+        icon: <FaShieldAlt className="h-8 w-8 text-blue-600" />
     },
     {
         title: 'Professional Excellence',
         description: 'Recognition from leading industry bodies validates our expertise and commitment to excellence.',
-        icon: <FaAward className="h-8 w-8 text-blue-500" />
+        icon: <FaAward className="h-8 w-8 text-blue-600" />
     },
     {
         title: 'Client Confidence',
         description: 'Our accreditations provide peace of mind that your project is in capable, qualified hands.',
-        icon: <FaThumbsUp className="h-8 w-8 text-blue-500" />
+        icon: <FaThumbsUp className="h-8 w-8 text-blue-600" />
     }
 ];
 

@@ -10,7 +10,7 @@ const certifications = [
         title: "NASC",
         sub: "National Access and Scaffolding Confederation",
         description: "Leading trade association for the access and scaffolding industry, ensuring safety and professional standards.",
-        icon: <LuBuilding2 className="h-8 w-8 text-blue-500" />,
+        icon: <LuBuilding2 className="h-8 w-8 text-blue-600" />,
     },
     {
         id: 2,
@@ -18,7 +18,7 @@ const certifications = [
         title: "CHAS",
         sub: "Contractors Health and Safety Assessment Scheme",
         description: "Health and safety pre-qualification scheme for contractors, demonstrating compliance with health and safety standards.",
-        icon: <AiOutlineSafety className="h-8 w-8 text-blue-500" />,
+        icon: <AiOutlineSafety className="h-8 w-8 text-blue-600" />,
     },
     {
         id: 3,
@@ -26,7 +26,7 @@ const certifications = [
         title: "SMAS",
         sub: "Safety Management Advisory Services",
         description: "Health and safety assessment scheme providing assurance of contractor competence and compliance.",
-        icon: <FaRegListAlt className="h-8 w-8 text-blue-500" />,
+        icon: <FaRegListAlt className="h-8 w-8 text-blue-600" />,
     },
     {
         id: 4,
@@ -34,7 +34,7 @@ const certifications = [
         title: "Builders Profile",
         sub: "Builders Profile Certification",
         description: "Verified contractor profile ensuring financial stability and professional competence.",
-        icon: <FaRegStar className="h-8 w-8 text-blue-500" />,
+        icon: <FaRegStar className="h-8 w-8 text-blue-600" />,
     },
     {
         id: 5,
@@ -42,7 +42,7 @@ const certifications = [
         title: "Construction Line",
         sub: "Construction Line Registration",
         description: "Pre-qualification service for construction contractors, ensuring compliance and capability.",
-        icon: <LuBuilding2 className="h-8 w-8 text-blue-500" />,
+        icon: <LuBuilding2 className="h-8 w-8 text-blue-600" />,
     },
     {
         id: 6,
@@ -50,7 +50,7 @@ const certifications = [
         title: "ISO 9001",
         sub: "ISO 9001:2015 Quality Management",
         description: "International standard for quality management systems, ensuring consistent service delivery.",
-        icon: <LuAward className="h-8 w-8 text-blue-500" />,
+        icon: <LuAward className="h-8 w-8 text-blue-600" />,
     },
 ];
 
@@ -60,12 +60,12 @@ const CertificationCategories = () => {
             <div className="container mx-auto text-black text-center">
                 <h2 className="text-3xl font-semibold mb-7">Our Professional Accreditations & Memberships</h2>
                 <div className="flex flex-wrap justify-center gap-3 mb-8">
-                    <button className="bg-blue-500 text-white py-2 px-4 rounded-full text-sm md:text-base">Construction Standards</button>
-                    <button className="bg-blue-500 text-white py-2 px-4 rounded-full text-sm md:text-base">Safety & Health</button>
-                    <button className="bg-blue-500 text-white py-2 px-4 rounded-full text-sm md:text-base">Quality Management</button>
-                    <button className="bg-blue-500 text-white py-2 px-4 rounded-full text-sm md:text-base">Professional Standards</button>
-                    <button className="bg-blue-500 text-white py-2 px-4 rounded-full text-sm md:text-base">Industry Registration</button>
-                    <button className="bg-blue-500 text-white py-2 px-4 rounded-full text-sm md:text-base">Quality Assurance</button>
+                    <button className="bg-blue-600 text-white py-2 px-4 rounded-full text-sm md:text-base">Construction Standards</button>
+                    <button className="bg-blue-600 text-white py-2 px-4 rounded-full text-sm md:text-base">Safety & Health</button>
+                    <button className="bg-blue-600 text-white py-2 px-4 rounded-full text-sm md:text-base">Quality Management</button>
+                    <button className="bg-blue-600 text-white py-2 px-4 rounded-full text-sm md:text-base">Professional Standards</button>
+                    <button className="bg-blue-600 text-white py-2 px-4 rounded-full text-sm md:text-base">Industry Registration</button>
+                    <button className="bg-blue-600 text-white py-2 px-4 rounded-full text-sm md:text-base">Quality Assurance</button>
                 </div>
             </div>
             <div className="container mx-auto text-center max-w-6xl">

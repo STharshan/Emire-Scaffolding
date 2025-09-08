@@ -9,7 +9,7 @@ const features = [
   },
   {
     icon: <Clock className="w-8 h-8 text-white" />,
-    bg: "bg-gray-800",
+    bg: "bg-blue-600",
     title: "Reliable Service",
     description: "On-time delivery and professional installation by experienced teams",
   },
@@ -21,7 +21,7 @@ const features = [
   },
   {
     icon: <Award className="w-8 h-8 text-white" />,
-    bg: "bg-gray-800",
+    bg: "bg-blue-600",
     title: "Quality Assured",
     description: "Premium materials and workmanship with satisfaction guarantee",
   },

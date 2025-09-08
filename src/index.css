@@ -9,19 +9,12 @@ body {
   scroll-behavior: smooth;
 }
 
-@keyframes scroll {
-  0% {
-    transform: translateX(0);
-  }
-
-  100% {
-    transform: translateX(-100%);
-  }
+/* Add this to your global CSS (e.g., styles.css or globals.css) */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
 }
 
-.animate-scroll {
-  display: flex;
-  animation: scroll infinite;
-  animation-duration: 30s;
-  /* Adjust as necessary */
+.no-scrollbar {
+  -ms-overflow-style: none;  /* for Internet Explorer */
+  scrollbar-width: none;      /* for Firefox */
 }

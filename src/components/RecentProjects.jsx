@@ -60,7 +60,7 @@ const projects = [
     description:
       "A short-term period, often during construction, renovation, or emergency situations where a permanent garage is unavailable.",
     image: "/garage.jpg",
-    tags: ["Victorian Architecture", "Full Coverage", "Legal Institution"],
+    tags: ["Temporary", "Emergency", "Legal Institution"],
   },
   {
     title: "Mansfield Road",

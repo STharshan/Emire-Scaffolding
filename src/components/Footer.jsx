@@ -1,21 +1,21 @@
+import { Link } from "react-router-dom";
 import { Building, Phone, Mail, MapPin } from "lucide-react";
 
 const Footer = () => {
   return (
     <footer className="bg-[#0B1224] text-white px-4 py-12 sm:px-6 lg:px-16">
-      <div className="max-w-7xl mx-auto grid gap-10 md:grid-cols-3">
+      <div className="max-w-7xl mx-auto grid gap-15 md:grid-cols-4">
         {/* Company Info */}
         <div>
           <div className="flex items-center gap-3 mb-4">
             <img
-              src="/Logo.png"         // replace with your image path
+              src="/Logo.png" // replace with your image path
               alt="Empire Scaffolding Logo"
               className="w-40 h-14 object-contain"
             />
           </div>
           <p className="text-sm text-gray-300">
-            Established in April 2000, Empire Scaffolding (GB) Ltd specialise in professional
-            scaffolding solutions across the Midlands and throughout the UK.
+            Established in April 2000, Empire Scaffolding (GB) Ltd specialise in professional scaffolding solutions across the Midlands and throughout the UK.
           </p>
         </div>
 
@@ -25,10 +25,7 @@ const Footer = () => {
           <ul className="space-y-3 text-sm text-gray-300">
             <li className="flex items-start gap-2">
               <Phone className="w-4 h-4 mt-1 text-blue-600" />
-              <a
-                href="tel:+01159641600"  // corrected href from "tell" to "tel"
-                className="hover:text-blue-600 transition"
-              >
+              <a href="tel:+01159641600" className="hover:text-blue-600 transition">
                 01159 641 600
               </a>
             </li>
@@ -68,6 +65,29 @@ const Footer = () => {
             <li>Emergency Services</li>
             <li>Safety Inspections</li>
             <li>Industrial Scaffolding</li>
+          </ul>
+        </div>
+
+        {/* Company */}
+        <div>
+          <h4 className="font-semibold mb-4">Company</h4>
+          <ul className="space-y-2 text-sm text-gray-300">
+            <li>
+              <Link
+                to="/terms&condition" // Redirects to the Terms & Conditions page
+                className="hover:text-blue-600 transition"
+              >
+                Term & Conditions
+              </Link>
+            </li>
+            <li>
+              <Link
+                to="/privacy-policy" // Assuming you have a privacy policy page as well
+                className="hover:text-blue-600 transition"
+              >
+                Privacy Policy
+              </Link>
+            </li>
           </ul>
         </div>
       </div>

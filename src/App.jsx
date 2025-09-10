@@ -1,40 +1,25 @@
-import About from "./components/About"
-import CallToAction from "./components/CallToAction"
-import CertificationCategories from "./components/CertificationCategories"
-import CertificationsSection from "./components/CertificationsSection"
-import Details from "./components/Details"
-import Footer from "./components/Footer"
-import Gallery from "./components/Gallery"
-import HeroSection from "./components/HeroSection"
-import Navbar from "./components/Navbar"
-import OurServices from "./components/OurServices"
-import PRSection from "./components/PRSection"
-import RecentProjects from "./components/RecentProjects"
-import Testimonials from "./components/Testimonials"
-import TrustedBy from "./components/TrustedBy"
-import WhyChooseUs from "./components/WhyChooseUs"
+import React from "react";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import Navbar from "./components/Navbar";
+import Footer from "./components/Footer";
+import TermsConditions from "./components/Term";
+import Home from "./pages/Home";
+import PrivacyPolicy from "./components/PrivacyPolicy";
+import ScrollToTop from "./components/ScrollToTop";
 
 function App() {
-
   return (
-    <>
+    <Router>
+      <ScrollToTop />
       <Navbar />
-      <HeroSection />
-      <OurServices />
-      <About />
-      <RecentProjects />
-      <PRSection />
-      <Gallery />
-      <Details />
-      <WhyChooseUs />
-      <Testimonials />
-      <CertificationCategories />
-      <CertificationsSection />
-      <TrustedBy />
-      <CallToAction />
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/terms&condition" element={<TermsConditions />} />
+        <Route path="/privacy-policy" element={<PrivacyPolicy />} />
+      </Routes>
       <Footer />
-    </>
-  )
+    </Router>
+  );
 }
 
-export default App
+export default App;

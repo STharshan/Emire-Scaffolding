@@ -77,7 +77,7 @@ const TermsConditions = () => {
           </p>
           <div className="text-gray-700">
             <p><strong>Empire Scaffolding</strong></p>
-            <p>Email: <a href="mailto:info@empirescaffolding.co.uk" className="text-blue-500">info@empirescaffolding.co.uk</a></p>
+            <p>Email: <a href="mailto:info@empirescaffolding.co.uk" className="text-blue-500 hover:underline">info@empirescaffolding.co.uk</a></p>
             <p>Phone: 0115 964 1600</p>
             <p>Address: Backerbrook Ind Est/Wigwam La, Nottingham NG15 7SZ</p>
           </div>

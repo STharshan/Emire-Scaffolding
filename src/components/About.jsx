@@ -70,7 +70,7 @@ const About = () => {
           </div>
 
           {/* Highlight Card */}
-          <div className="order-3 md:order-2 bg-gradient-to-r from-blue-600 to-blue-800 text-white rounded-xl p-6 text-center grid grid-cols-2 md:grid-cols-2 gap-4 items-center w-full lg:w-lg lg:-ml-30 lg:mx-auto">
+          <div className="order-3 md:order-2 bg-gradient-to-r from-blue-600 to-blue-800 text-white rounded-xl p-6 text-center grid grid-cols-2 md:grid-cols-2 gap-4 items-center w-full lg:w-lg lg:-ml-30 lg:mx-auto hover:z-10 hover:scale-105 transition-all duration-300">
             <div>
               <p className="text-3xl font-bold">25+</p>
               <p className="text-sm">Years Experience</p>
@@ -88,7 +88,6 @@ const About = () => {
               <p className="text-sm">Wide Service</p>
             </div>
           </div>
-
         </div>
       </div>
     </section>

@@ -14,7 +14,7 @@ const logos = [
     src: "/mor.png",
     alt: "British Gypsum logo",
   },
-    {
+  {
     name: "British Gypsum",
     src: "/bow.png",
     alt: "British Gypsum logo",
@@ -39,11 +39,11 @@ const TrustedBy = () => {
         </p>
 
         {/* Logo Grid */}
-        <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 items-center justify-items-center">
+        <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 items-center justify-items-center gap-6">
           {logos.map((logo, idx) => (
             <div
               key={idx}
-              className="bg-white px-6 py-4 rounded-xl shadow-sm w-full max-w-[200px] h-[80px] flex items-center justify-center"
+              className="bg-white px-6 py-4 rounded-xl shadow-sm w-full max-w-[200px] h-[80px] flex items-center justify-center hover:scale-105 hover:z-10 transition-all duration-300"
             >
               <img
                 src={logo.src}

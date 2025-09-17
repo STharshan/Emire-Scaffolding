@@ -70,7 +70,7 @@ const Footer = () => {
 
         {/* Company */}
         <div>
-          <h4 className="font-semibold mb-4">Company</h4>
+          <h4 className="font-semibold mb-4">Company Policy</h4>
           <ul className="space-y-2 text-sm text-gray-300">
             <li>
               <Link

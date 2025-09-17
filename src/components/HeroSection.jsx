@@ -44,7 +44,7 @@ const HeroSection = () => {
             </a>
 
             {/* Anchor Link to scroll to Services Section */}
-            <a href="#about">
+            <a href="#our-services">
               <button className="border border-white text-white font-semibold px-5 py-3 rounded hover:bg-white hover:text-[#0d2b7d] transition w-full sm:w-auto">
                 Our Services
               </button>

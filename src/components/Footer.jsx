@@ -11,7 +11,7 @@ const Footer = () => {
             <img
               src="/Logo.png" // replace with your image path
               alt="Empire Scaffolding Logo"
-              className="w-40 h-14 object-contain"
+              className="w-40 h-25 object-contain"
             />
           </div>
           <p className="text-sm text-gray-300">

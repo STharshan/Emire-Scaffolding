@@ -39,16 +39,6 @@ export default function Gallery() {
     updateGallery(newIndex);
   };
 
-  const openModal = (img) => {
-    setActiveImage(img);
-    setIsModalOpen(true);
-  };
-
-  const closeModal = () => {
-    setIsModalOpen(false);
-    setActiveImage(null);
-  };
-
   return (
     <section className="bg-white py-2 px-4 scroll-m-25" id="gallery">
       <div className="max-w-7xl mx-auto text-center">
@@ -73,12 +63,11 @@ export default function Gallery() {
                   key={idx}
                   data-card
                   className="min-w-[400px] px-6 py-5 border border-gray-300 rounded-lg shadow-sm hover:shadow-lg transition bg-white snap-start"
-                  onClick={() => openModal(item.img)} // Open the modal on click
                 >
                   <img
                     src={item.img}
                     alt={`Testimonial ${idx + 1}`}
-                    className="w-full h-80 object-cover rounded-lg transition-transform duration-300 ease-in-out hover:scale-105 cursor-pointer"
+                    className="w-full h-80 object-cover rounded-lg transition-transform duration-300 ease-in-out hover:scale-110 cursor-pointer"
                   />
                 </div>
               ))}
@@ -93,25 +82,6 @@ export default function Gallery() {
             <ChevronRight className="w-5 h-5" />
           </button>
         </div>
-
-        {/* Modal for Enlarged Image */}
-        {isModalOpen && (
-          <div className="fixed inset-0 flex items-center justify-center bg-black bg-opacity-75 z-50">
-            <div className="relative">
-              <button
-                onClick={closeModal}
-                className="absolute top-4 right-4 text-white bg-[#a45731] rounded-full p-2"
-              >
-                Close
-              </button>
-              <img
-                src={activeImage}
-                alt="Enlarged"
-                className="max-w-full max-h-full object-contain"
-              />
-            </div>
-          </div>
-        )}
       </div>
     </section>
   );

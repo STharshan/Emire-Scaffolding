@@ -23,28 +23,23 @@ const About = () => {
         <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-4">
           25 Years of Excellence
         </h2>
-        <p className="text-gray-700 mb-8 max-w-xl text-md">
-          Empire Scaffolding (GB) Ltd is a family-run company established in 2000, specialising in the supply, erection, and dismantling of scaffolding for commercial, domestic, and industrial projects. With over 60 directly employed CISRS-qualified staff, we combine experience with reliability. Based in Hucknall, Nottinghamshire, we are ideally located in the Midlands, giving us easy access to deliver scaffolding services nationwide.
-        </p>
+        <div className='flex flex-col md:flex-row'>
+          <p className="text-gray-700 mb-8 max-w-xl text-md md:w-1/2">
+            Empire Scaffolding (GB) Ltd is a family-run company established in 2000, specialising in the supply, erection, and dismantling of scaffolding for commercial, domestic, and industrial projects. With over 60 directly employed CISRS-qualified staff, we combine experience with reliability. Based in Hucknall, Nottinghamshire, we are ideally located in the Midlands, giving us easy access to deliver scaffolding services nationwide.
+          </p>
+
+          {/* Image at the top of the section */}
+          <img 
+            src="/Empire.jpg" 
+            alt="About Image" 
+            className="w-140 h-64 ml-0 md:ml-40 mx-auto object-cover rounded-lg mb-8 md:mb-0"
+          />
+        </div>
 
         {/* Grid layout */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mt-8">
           {/* Service Lists */}
-          <div className="order-1 md:order-1 md:col-span-2 grid grid-cols-1 sm:grid-cols-2 gap-6">
-            {/* Service Areas */}
-            {/* <div>
-              <h4 className="font-semibold mb-3">Service Areas</h4>
-              <ul className="space-y-2 text-sm">
-                {serviceAreas.map((area, idx) => (
-                  <li key={idx} className="flex items-center gap-2 text-gray-800">
-                    <CheckCircle className="w-4 h-4 text-green-600" />
-                    {area}
-                  </li>
-                ))}
-              </ul>
-            </div> */}
-
-            {/* Our Services */}
+          <div className="order-1 md:col-span-2 grid grid-cols-1 sm:grid-cols-2">
             <div>
               <h4 className="font-semibold mb-3">Our Services</h4>
               <ul className="space-y-2 text-sm">
@@ -58,7 +53,7 @@ const About = () => {
             </div>
           </div>
 
-          {/* Quote Section (comes before highlight card on small screens) */}
+          {/* Quote Section */}
           <div className="order-2 md:order-3 mt-0 md:mt-10 bg-gray-100 p-5 rounded-lg text-left text-sm sm:text-base shadow-sm w-full sm:w-2xl">
             <p className="font-semibold text-gray-700 mb-1">
               "Quotations for larger works carried out throughout the UK"

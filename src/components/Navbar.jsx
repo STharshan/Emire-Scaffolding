@@ -37,12 +37,12 @@ const Navbar = () => {
 
   return (
     <header className="w-full bg-black border-b fixed top-0 left-0 z-50">
-      <div className="flex items-center justify-between py-3 px-4 sm:px-10">
+      <div className="flex items-center justify-between px-4 sm:px-10">
         {/* Logo */}
-        <div className="flex items-center gap-4">
-          <div className="w-40 h-14">
+        <div className="flex items-center">
+          <div className="w-40 h-25">
             <img
-              src="/Logo.png"
+              src="/logo.jpg"
               alt="Empire Scaffolding Logo"
               className="w-full h-full object-contain"
             />

@@ -10,11 +10,14 @@ const testimonials = [
   { img: '/6.jpg' },
   { img: '/7.jpg' },
   { img: '/8.jpg' },
+  { img: 'Empire.jpg'}
 ];
 
 export default function Gallery() {
   const scrollRef = useRef(null);
   const [currentIndex, setCurrentIndex] = useState(0);
+  const [isModalOpen, setIsModalOpen] = useState(false);
+  const [activeImage, setActiveImage] = useState(null);
   const totalImages = testimonials.length;
 
   const updateGallery = (newIndex) => {
@@ -36,6 +39,16 @@ export default function Gallery() {
     updateGallery(newIndex);
   };
 
+  const openModal = (img) => {
+    setActiveImage(img);
+    setIsModalOpen(true);
+  };
+
+  const closeModal = () => {
+    setIsModalOpen(false);
+    setActiveImage(null);
+  };
+
   return (
     <section className="bg-white py-2 px-4 scroll-m-25" id="gallery">
       <div className="max-w-7xl mx-auto text-center">
@@ -52,19 +65,20 @@ export default function Gallery() {
 
           <div
             ref={scrollRef}
-            className="overflow-x-auto overflow-y-hidden scroll-smooth snap-x snap-mandatory pr-2 no-scrollbar"  
+            className="overflow-x-auto overflow-y-hidden scroll-smooth snap-x snap-mandatory pr-2 no-scrollbar"
           >
             <div className="flex gap-6 pb-4">
               {testimonials.map((item, idx) => (
                 <div
                   key={idx}
                   data-card
-                  className="min-w-[300px] px-6 py-4 border border-gray-300 rounded-lg shadow-sm hover:shadow-md transition bg-white snap-start"
+                  className="min-w-[400px] px-6 py-5 border border-gray-300 rounded-lg shadow-sm hover:shadow-lg transition bg-white snap-start"
+                  onClick={() => openModal(item.img)} // Open the modal on click
                 >
                   <img
                     src={item.img}
                     alt={`Testimonial ${idx + 1}`}
-                    className="w-full h-48 object-cover rounded-lg mb-4"
+                    className="w-full h-80 object-cover rounded-lg transition-transform duration-300 ease-in-out hover:scale-105 cursor-pointer"
                   />
                 </div>
               ))}
@@ -73,12 +87,31 @@ export default function Gallery() {
 
           <button
             onClick={scrollRight}
-            className="absolute right-0  lg:-right-8 top-1/2 -translate-y-1/2 bg-blue-600 text-white rounded-full p-2 shadow-lg hover:bg-blue-700 transition"
+            className="absolute right-0 lg:-right-8 top-1/2 -translate-y-1/2 bg-blue-600 text-white rounded-full p-2 shadow-lg hover:bg-blue-700 transition"
             aria-label="Next"
           >
             <ChevronRight className="w-5 h-5" />
           </button>
         </div>
+
+        {/* Modal for Enlarged Image */}
+        {isModalOpen && (
+          <div className="fixed inset-0 flex items-center justify-center bg-black bg-opacity-75 z-50">
+            <div className="relative">
+              <button
+                onClick={closeModal}
+                className="absolute top-4 right-4 text-white bg-[#a45731] rounded-full p-2"
+              >
+                Close
+              </button>
+              <img
+                src={activeImage}
+                alt="Enlarged"
+                className="max-w-full max-h-full object-contain"
+              />
+            </div>
+          </div>
+        )}
       </div>
     </section>
   );

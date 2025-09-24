@@ -12,34 +12,35 @@ const serviceTypes = [
 
 const About = () => {
   return (
-    <section className="w-full bg-white px-4 py-16 sm:px-6 lg:px-16 scroll-m-15" id='about'>
-      <div className="max-w-7xl mx-auto">
-        {/* Badge */}
-        <span className="inline-block text-sm bg-blue-100 text-blue-600 px-4 py-1 rounded-full font-semibold mb-4">
-          Established 2000
-        </span>
+    <section className="w-full bg-white  scroll-m-15" id='about'>
+      <div className="max-w-7xl px-4 py-16 sm:px-6 lg:px-16 mx-auto">
+        <div className='grid lg:flex lg:gap-30 mb-5'>
+          <div>
+            <span className="inline-block text-sm bg-blue-100 text-blue-600 px-4 py-1 rounded-full font-semibold mb-4">
+              Established 2000
+            </span>
 
-        {/* Heading and description */}
-        <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-4">
-          25 Years of Excellence
-        </h2>
-        <div className='flex flex-col md:flex-row'>
-          <p className="text-gray-700 mb-8 max-w-xl text-md md:w-1/2">
-            Empire Scaffolding (GB) Ltd is a family-run company established in 2000, specialising in the supply, erection, and dismantling of scaffolding for commercial, domestic, and industrial projects. With over 60 directly employed CISRS-qualified staff, we combine experience with reliability. Based in Hucknall, Nottinghamshire, we are ideally located in the Midlands, giving us easy access to deliver scaffolding services nationwide.
-          </p>
+            {/* Heading and description */}
+            <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-4">
+              25 Years of Excellence
+            </h2>
+            <p className="text-gray-700 mb-8 max-w-xl text-md">
+              Empire Scaffolding (GB) Ltd is a family-run company established in 2000, specialising in the supply, erection, and dismantling of scaffolding for commercial, domestic, and industrial projects. With over 60 directly employed CISRS-qualified staff, we combine experience with reliability. Based in Hucknall, Nottinghamshire, we are ideally located in the Midlands, giving us easy access to deliver scaffolding services nationwide.
+            </p>
+          </div>
+          {/* Badge */}
 
-          {/* Image at the top of the section */}
-          <img 
-            src="/Empire.jpg" 
-            alt="About Image" 
-            className="w-140 h-64 ml-0 md:ml-40 mx-auto object-cover rounded-lg mb-8 md:mb-0"
+          <img
+            src='/Empire.jpg'
+             className="w-120 h-64 object-cover mx-auto rounded-lg mb-8 md:mb-0"
           />
         </div>
 
         {/* Grid layout */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mt-8">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {/* Service Lists */}
-          <div className="order-1 md:col-span-2 grid grid-cols-1 sm:grid-cols-2">
+          <div className="order-1 md:order-1 md:col-span-2 grid grid-cols-1 sm:grid-cols-2 gap-6">
+            {/* Our Services */}
             <div>
               <h4 className="font-semibold mb-3">Our Services</h4>
               <ul className="space-y-2 text-sm">

@@ -20,7 +20,7 @@ const HeroSection = () => {
       <div className="relative z-10 flex items-center justify-center min-h-screen px-4 sm:px-8 md:px-16">
         <div className="text-center max-w-2xl">
           {/* Badge */}
-          <span className="inline-block mb-4 bg-white text-black text-sm font-semibold px-4 py-1 rounded-full shadow">
+          <span className="inline-block mb-4 mt-20 bg-white text-black text-sm font-semibold px-4 py-1 rounded-full shadow">
             Professional Scaffolding Services
           </span>
 

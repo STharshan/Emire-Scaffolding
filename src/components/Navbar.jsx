@@ -63,8 +63,8 @@ const Navbar = () => {
         </nav>
 
         {/* Right - Phone + Quote button */}
-        <div className="hidden md:flex items-center gap-6">
-          <div className="flex items-center gap-2 text-white">
+        <div className="hidden lg:flex items-center gap-6">
+          <div className="xl:flex hidden items-center gap-2 text-white">
             <Phone className="w-4 h-4" />
             <a
               href="tel:01159641600"

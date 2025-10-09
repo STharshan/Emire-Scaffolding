@@ -63,19 +63,35 @@ const Testimonials = () => {
         </div>
 
         {/* Bottom Rating Bar */}
-        <div className="mt-10 flex flex-col sm:flex-row items-center bg-white rounded-full py-3 max-w-lg mx-auto justify-center gap-4 text-sm text-gray-700">
+        <div
+          className="
+    mt-10 
+    flex flex-col sm:flex-row items-center 
+    bg-white rounded-full 
+    py-3 px-4 sm:px-6 md:px-8 
+    max-w-sm sm:max-w-lg md:max-w-2xl 
+    mx-auto 
+    justify-center gap-3 sm:gap-4 
+    text-xs sm:text-sm md:text-base 
+    text-gray-700 shadow-md
+  "
+        >
+          {/* Star Rating */}
           <div className="flex items-center gap-1 text-yellow-500">
             {[...Array(5)].map((_, i) => (
-              <Star key={i} size={17} fill="currentColor" />
+              <Star key={i} size={16} className="sm:w-5 sm:h-5" fill="currentColor" />
             ))}
           </div>
-          <p className="text-center">
+
+          {/* Text Section */}
+          <p className="text-center leading-tight sm:leading-normal">
             <strong className="font-bold text-gray-900">
               5.0 out of 5 stars ·{" "}
             </strong>
             Based on customer reviews
           </p>
         </div>
+
       </div>
     </section>
   );

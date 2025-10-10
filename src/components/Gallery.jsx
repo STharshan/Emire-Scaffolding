@@ -40,7 +40,7 @@ export default function Gallery() {
   };
 
   return (
-    <section className="bg-white py-2 px-4 scroll-m-25" id="gallery">
+    <section className="bg-white py-7 px-4 " id="gallery">
       <div className="max-w-7xl mx-auto text-center">
         <p className="font-semibold text-2xl uppercase mb-10">Gallery</p>
 

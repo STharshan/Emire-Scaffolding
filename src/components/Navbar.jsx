@@ -1,5 +1,8 @@
+"use client";
+
 import { useState } from "react";
 import { Phone, Menu, X } from "lucide-react";
+import { HashLink } from "react-router-hash-link";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -13,26 +16,9 @@ const Navbar = () => {
     { label: "Contact", href: "contact" },
   ];
 
-  const handleScroll = (id) => {
-    const element = document.getElementById(id);
-    if (element) {
-      const headerOffset = 80; // height of your fixed navbar
-      const elementPosition = element.getBoundingClientRect().top;
-      const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
-
-      window.scrollTo({
-        top: offsetPosition,
-        behavior: "smooth",
-      });
-
-      setIsOpen(false); // close mobile menu
-    }
-  };
-
   // Handle phone call
   const handleCall = () => {
     console.log("Calling 01159 641 600");
-    // You can add additional actions here, such as tracking or analytics
   };
 
   return (
@@ -52,13 +38,21 @@ const Navbar = () => {
         {/* Desktop Nav */}
         <nav className="hidden lg:flex items-center gap-8 text-white font-medium text-lg">
           {navLinks.map((link) => (
-            <button
+            <HashLink
               key={link.href}
-              onClick={() => handleScroll(link.href)}
+              smooth
+              to={`/#${link.href}`}
+              scroll={(el) => {
+                const yOffset = -80; // height of your fixed navbar
+                const y =
+                  el.getBoundingClientRect().top + window.pageYOffset + yOffset;
+                window.scrollTo({ top: y, behavior: "smooth" });
+                setIsOpen(false); // close mobile menu
+              }}
               className="hover:text-blue-600 transition"
             >
               {link.label}
-            </button>
+            </HashLink>
           ))}
         </nav>
 
@@ -68,7 +62,7 @@ const Navbar = () => {
             <Phone className="w-4 h-4" />
             <a
               href="tel:01159641600"
-              onClick={handleCall}  // Trigger handleCall when clicked
+              onClick={handleCall}
               className="whitespace-nowrap font-semibold"
             >
               01159 641 600
@@ -95,20 +89,28 @@ const Navbar = () => {
       {isOpen && (
         <div className="lg:hidden bg-black text-white flex flex-col items-center gap-4 py-6 text-lg">
           {navLinks.map((link) => (
-            <button
+            <HashLink
               key={link.href}
-              onClick={() => handleScroll(link.href)}
+              smooth
+              to={`/#${link.href}`}
+              scroll={(el) => {
+                const yOffset = -80; // height of your fixed navbar
+                const y =
+                  el.getBoundingClientRect().top + window.pageYOffset + yOffset;
+                window.scrollTo({ top: y, behavior: "smooth" });
+                setIsOpen(false); // close mobile menu
+              }}
               className="hover:text-blue-600 transition"
             >
               {link.label}
-            </button>
+            </HashLink>
           ))}
 
           <div className="flex items-center gap-2 text-white">
             <Phone className="w-4 h-4" />
             <a
               href="tel:01159641600"
-              onClick={handleCall}  // Trigger handleCall when clicked
+              onClick={handleCall}
               className="whitespace-nowrap font-semibold"
             >
               01159 641 600
